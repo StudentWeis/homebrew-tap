@@ -11,8 +11,12 @@ Apple Silicon and Intel Macs use their respective DMGs. Upgrade with
 Uninstall with `brew uninstall --cask ropy`. Clipboard history and preferences
 are preserved.
 
-Current releases are unsigned. This tap does not bypass Gatekeeper. If macOS
-blocks launch, review the application's source and allow Ropy in System Settings
+Current releases are unsigned. At the user's request, this self-hosted Cask
+automatically removes only `com.apple.quarantine` from the installed Ropy.app,
+including with a custom `--appdir`. Other extended attributes are preserved;
+no sudo is used. An absent attribute is harmless; other command errors stop
+installation and print the error. This does not sign or notarize the application. If macOS
+still blocks launch, review the source and allow Ropy in System Settings
 → Privacy & Security.
 
 The [upstream repository](https://github.com/StudentWeis/ropy) maintains the
