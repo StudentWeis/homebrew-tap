@@ -1,9 +1,9 @@
 cask "ropy" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.6.2"
-  sha256 arm:   "8e1566df377c37fa51cf3ce6b170685d8ae4cd2aed23c838e612f394db964f45",
-         intel: "c8c6c6c20599ab2727dace1c5240f2c2edbd736ec2bc4fbeb32a2cc68c3a29b3"
+  version "0.7.0"
+  sha256 arm:   "5deeac977a04b4685d3e77649808e5fcf1d4a25208c344b65f1fce54b486efa1",
+         intel: "6a01c374ce4165901a036f0a6b86a16fc860c58b1510f57a217a34b2b9870470"
 
   url "https://github.com/StudentWeis/ropy/releases/download/#{version}/ropy-#{arch}-apple-darwin.dmg"
   name "Ropy"
